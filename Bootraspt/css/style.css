@@ -1,0 +1,10 @@
+ ul {
+    list-style-type: none;
+}
+.btn-danger{
+height: 48px;
+border-radius: 0;
+}
+img.nout {
+    width: 100%;
+}

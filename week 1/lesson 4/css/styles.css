@@ -1,0 +1,152 @@
+ /*p {
+     background-color: red;
+     display: inline-block;
+     width: 300px;
+ }
+
+ span {
+     background-color: aqua;
+     display: block;
+     width: 300px;
+ }*/
+
+ /* ПСЕВДОКЛАССЫ */
+
+ span:first-child {
+     color: blue;
+ }
+
+ span:last-child {
+     color: blueviolet;
+ }
+
+ span:nth-child(2) {
+     color: coral;
+ }
+
+ input:focus {
+     outline: none;
+ }
+
+ /* Посещенные ссылки*/
+
+ a:visited {
+     color: pink;
+ }
+
+ /* Непосещенные ссылки*/
+
+ a:link {
+     color: orange;
+ }
+
+ a {
+     transition: all 1s;
+ }
+
+ /* При наведение*/
+
+ a:hover {
+     background-color: rosybrown;
+     font-size: 32px;
+ }
+
+ /* Активные ссылки */
+
+ a:active {
+     color: black;
+ }
+
+ /*К СТРОЧНЫМ ТЕГАМ НЕ РАБОТАЕТ*/
+
+ span::first-letter {
+     font-size: 16px;
+     font-weight: 700;
+ }
+
+ /* первая буква текста*/
+
+ p::first-letter {
+     font-size: 16px;
+     font-weight: 700;
+ }
+
+ /*первая строка текста*/
+
+ p::first-line {
+     background: lightblue;
+     font-style: italic;
+ }
+
+ /*чтобы работать c placeholder*/
+
+ input::placeholder {
+     color: #000;
+     font-size: 15px;
+ }
+
+ /* чтобы поставить контент после элемента*/
+
+ #span-1::before {
+     content: ' Apple ';
+ }
+
+ /* чтобы поставить контент до этого элемента*/
+
+ #span-1::after {
+     content: ' M1 ';
+     font-weight: 700;
+ }
+
+ #span-2::before {
+     content: " globus ";
+ }
+
+ #span-2::after {
+     content: ' megapay ';
+ }
+
+ .main-block {
+     width: 100%;
+     background: lightslategray;
+ }
+
+ .navbar {
+     width: 100%;
+     height: 100px;
+     background: darkblue;
+     position: fixed;
+     /*position: fixed;*/
+     top: 0;
+     /*-index: -1;*/
+ }
+
+ .first-div {
+     margin-top: 150px;
+ }
+
+ .content-block {
+     width: 100%;
+     height: 600px;
+     position: relative;
+ }
+
+ .footer {
+     width: 100%;
+     height: 150px;
+     background: darkcyan;
+ }
+
+ .box {
+     width: 200px;
+     height: 200px;
+     background: #000;
+     position: absolute;
+     /*right: 0;
+     bottom: 0;*/
+     /*left: 0;
+     top: 0;*/
+     bottom: 10px;
+     left: 10px;
+     z-index: 2;
+ }

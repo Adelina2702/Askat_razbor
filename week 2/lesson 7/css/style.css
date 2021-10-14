@@ -1,0 +1,101 @@
+h1 {
+    color: darkmagenta;
+    /* nazvanie animation */
+    animation-name: size;
+    /* vremya deistviya */
+    animation-duration: 2s;
+    /* vremya zaderzhki */
+    animation-delay: 1s;
+    /* kak proishodit animation */
+    /* animation-timing-function: ease; */
+    /* EASY-анимация начинается медленно 
+    рагоняется быстро и замедляется под конец */
+    /* animation-timing-function: ease-in; */
+    /* ease-in анимация начинается медленно, а затем плавно
+    ускоряется в конце */
+    animation-timing-function: ease-out;
+    /* ease-out - анимация начинается быстро,и 
+    замедляется в конце */
+    animation-timing-function: ease-in-out;
+    /* ease-in-ouy анимация медленно начинается и 
+    медленно заканчивается */
+    /* количество повторений */
+    animation-iteration-count: infinite;
+    /* направление анимации */
+    animation-direction: alternate;
+    /* каждый нечетный повтор цикла анимации 
+    воспроизводится в нормальном направлении,а все 
+    нечетные в обратном направлении */
+    animation-direction: reverse;
+    /* все анимациии в обратном направлении */
+    animation-direction: alternate-reverse;
+    /* десь каждый нечетный повтор воспроизводится
+    в обратном направлении, а каждый четный в 
+    нормальном направлении */
+}
+
+@keyframes size {
+    from {
+        font-size: 12px;
+    }
+    50% {
+        font-size: 15px;
+    }
+    to {
+        font-size: 12px;
+    }
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+}
+
+.ball {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+.ball:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.ball:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.ball:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.ball:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.ball:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        bottom: 0;
+    }
+    100% {
+        right: 150px;
+        bottom: 150px;
+    }
+}

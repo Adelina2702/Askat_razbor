@@ -1,0 +1,24 @@
+.road {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 500px;
+    height: 160px;
+    margin: 10px;
+    justify-content: space-around;
+    /* position: relative; */
+}
+
+.line {
+    width: 100%;
+    border: 3px dotted #fff;
+}
+.car1, .car2 {
+    /* /* width: 90px;
+    height: 30px;
+    background-color: violet;
+    border: 3px solid rgba(167,89,167);
+    position: relative; */
+    transition: 1s ease; 
+}
+
