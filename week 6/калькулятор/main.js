@@ -36,11 +36,15 @@ $(document).ready(function(){
             valueOne = valueOne / valueTwo
     }
 
-        $('.valueOne').text(valueOne)
-        $('.valueSymble').text('')
-        $('.valueTwo').text('')
-    })
+})
 
+$('#cansel').click(function () {
+    $(".x1").addClass('first-active')
+    $(".symble").css({'pointer-events':'none'})
+    $('.valueOne').text("")
+    $('.valueSymble').text('')
+    $('.valueTwo').text('')
+    })
 
 
 })

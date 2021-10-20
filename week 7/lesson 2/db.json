@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Makers"
+    },
+    {
+      "title": "Mackbook M1po",
+      "id": 2
+    },
+    {
+      "title": "Bootcamp",
+      "id": 3
+    },
+    {
+      "title": "js13",
+      "id": 4
+    },
+    {
+      "title": "Mackbook M1po",
+      "id": 5
+    }
+  ]
+}
